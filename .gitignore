@@ -1,0 +1,29 @@
+# Node.js and npm
+node_modules/
+package-lock.json
+.env
+
+# Build output
+build/
+dist/
+
+# IDE and editor specific files
+.vscode/
+.idea/
+
+# macOS-specific files
+.DS_Store
+
+# Logs
+*.log
+
+
+/react-app/node_modules/
+/react-app/build/
+
+
+/express-app/node_modules/
+/express-app/dist/
+
+
+/express-app/.env
