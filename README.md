@@ -2,6 +2,9 @@
 
 #### A Word Game, Created by React.js, Express.js and Chakra UI   
 
+## Description
+
+The Quiz App is a responsive and progressive web application built with React.js for the front-end and Express.js for the back-end. The app allows users to take a quiz where they are presented with a series of questions and are required to select the correct answer. After completing the quiz, the app displays the user's score and rank based on their performance.
 
 ![Untitled-1](https://github.com/oayman0/quiz-app-react-express/assets/37955772/db7d530f-a92b-4e3c-bec1-669db3eb9c70)
 
@@ -9,12 +12,9 @@
 
 ![Untitled-3](https://github.com/oayman0/quiz-app-react-express/assets/37955772/ece0d169-0a9a-43c5-9951-f82616cde0cd)
 
-## Wireframes  [Figma](https://www.figma.com/file/DyJmaGRTZYCIBNdjmIY94v/Untitled?type=design&node-id=0%3A1&mode=design&t=XEuZPl9bcXyVpsVH-1)
+## Wireframes  ([Figma](https://www.figma.com/file/DyJmaGRTZYCIBNdjmIY94v/Untitled?type=design&node-id=0%3A1&mode=design&t=XEuZPl9bcXyVpsVH-1))
 ![Frame 1](https://github.com/oayman0/quiz-app-react-express/assets/37955772/f7ff81a2-3210-4640-a9b0-a4548a94ed2b)
 
-## Description
-
-The Quiz App is a responsive and progressive web application built with React.js for the front-end and Express.js for the back-end. The app allows users to take a quiz where they are presented with a series of questions and are required to select the correct answer. After completing the quiz, the app displays the user's score and rank based on their performance.
 
 
 ## How to Run the Project Locally
