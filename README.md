@@ -2,6 +2,10 @@
 
 #### A Word Game, Created by React.js, Express.js and Chakra UI   
 
+## Live Preview
+
+[https://quizapp-0emu.onrender.com/](https://quizapp-0emu.onrender.com/)
+
 ## Description
 
 The Quiz App is a responsive and progressive (installable) web application built with React.js for the front-end and Express.js for the back-end. The app allows users to take a quiz where they are presented with a series of questions and are required to select the correct answer. After completing the quiz, the app displays the user's score and rank based on their performance.
