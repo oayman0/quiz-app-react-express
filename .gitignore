@@ -20,7 +20,6 @@ dist/
 
 /react-app/node_modules/
 /react-app/build/
-/react-app/src/config/apiConfig.js
 
 
 
