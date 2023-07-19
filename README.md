@@ -5,7 +5,7 @@
 
 ![Untitled-1](https://github.com/oayman0/quiz-app-react-express/assets/37955772/db7d530f-a92b-4e3c-bec1-669db3eb9c70)
 
-![Untitled-2](https://github.com/oayman0/quiz-app-react-express/assets/37955772/9a05cb1b-14a7-45c7-a25f-81171bf5d039)
+![Untitled-2](https://github.com/oayman0/quiz-app-react-express/assets/37955772/d21ff763-b0c8-4630-8a61-efc32f092972)
 
 ![Untitled-3](https://github.com/oayman0/quiz-app-react-express/assets/37955772/ece0d169-0a9a-43c5-9951-f82616cde0cd)
 
