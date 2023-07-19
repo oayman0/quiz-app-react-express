@@ -5,6 +5,11 @@
 
 ![Untitled-1](https://github.com/oayman0/quiz-app-react-express/assets/37955772/db7d530f-a92b-4e3c-bec1-669db3eb9c70)
 
+![Untitled-2](https://github.com/oayman0/quiz-app-react-express/assets/37955772/9a05cb1b-14a7-45c7-a25f-81171bf5d039)
+
+![Untitled-3](https://github.com/oayman0/quiz-app-react-express/assets/37955772/ece0d169-0a9a-43c5-9951-f82616cde0cd)
+
+
 ## Description
 
 The Quiz App is a simple web application built with React.js for the front-end and Express.js for the back-end. The app allows users to take a quiz where they are presented with a series of questions and are required to select the correct answer. After completing the quiz, the app displays the user's score and rank based on their performance.
