@@ -9,7 +9,7 @@
 
 ![Untitled-3](https://github.com/oayman0/quiz-app-react-express/assets/37955772/ece0d169-0a9a-43c5-9951-f82616cde0cd)
 
-## Wireframes  [Figma]([https://nodejs.org/](https://www.figma.com/file/DyJmaGRTZYCIBNdjmIY94v/Untitled?type=design&node-id=0%3A1&mode=design&t=XEuZPl9bcXyVpsVH-1)) 
+## Wireframes  [Figma](https://www.figma.com/file/DyJmaGRTZYCIBNdjmIY94v/Untitled?type=design&node-id=0%3A1&mode=design&t=XEuZPl9bcXyVpsVH-1)
 ![Frame 1](https://github.com/oayman0/quiz-app-react-express/assets/37955772/f7ff81a2-3210-4640-a9b0-a4548a94ed2b)
 
 ## Description
