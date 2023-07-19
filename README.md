@@ -2,9 +2,13 @@
 
 #### A Word Game, Created by React.js and Express.js   
 
+
+![Untitled-1](https://github.com/oayman0/quiz-app-react-express/assets/37955772/db7d530f-a92b-4e3c-bec1-669db3eb9c70)
+
 ## Description
 
 The Quiz App is a simple web application built with React.js for the front-end and Express.js for the back-end. The app allows users to take a quiz where they are presented with a series of questions and are required to select the correct answer. After completing the quiz, the app displays the user's score and rank based on their performance.
+
 
 ## How to Run the Project Locally
 
