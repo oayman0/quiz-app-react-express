@@ -1,12 +1,11 @@
 
-import { Button} from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 const AnswerOption = ({
   pos,
   index,
   selectedAnswer,
   showFeedback,
   handleAnswerSelection,
-  isAnswerCorrect,
 }) => {
   const handleClick = () => {
     if (!showFeedback) {
@@ -19,10 +18,10 @@ const AnswerOption = ({
       w='50vw'
       borderRadius='50px'
       onClick={handleClick}
-      colorScheme={selectedAnswer === index ? "pink" : "gray"}
-      borderColor={selectedAnswer === index ? "pink" : "gray"}
+      colorScheme={selectedAnswer === index ? "blue" : "gray"}
+      borderColor='gray'
       variant={selectedAnswer === index ? "solid" : "outline"}
-      borderWidth="2px"
+      borderWidth='1px'
       p={2}
       mr={2}
       mb={3}

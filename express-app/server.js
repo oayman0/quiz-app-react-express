@@ -37,13 +37,11 @@ const getRandomWordsWithAllPos = (wordList) => {
 app.get('/words', (req, res) => {
   const testData = JSON.parse(fs.readFileSync('TestData.json'));
   const wordList = testData.wordList;
-
   const selectedWords = getRandomWordsWithAllPos(wordList);
   res.json(selectedWords);
 });
 
-
-const calculateRank=(finalScore,scoresList)=>{
+const calculateRank = (finalScore, scoresList) => {
   const sortedScores = scoresList.slice().sort((a, b) => a - b);
   let low = 0;
   let high = sortedScores.length;
@@ -54,28 +52,20 @@ const calculateRank=(finalScore,scoresList)=>{
     } else {
       high = mid;
     }
-  } 
-  const rank = (low/ sortedScores.length) * 100;
-return (Math.round(rank * 100) / 100);
+  }
+  const rank = (low / sortedScores.length) * 100;
+  return (Math.round(rank * 100) / 100);
 }
 
-  app.post('/rank', (req, res) => {
-    const testData = JSON.parse(fs.readFileSync('TestData.json'));
-    const scoresList = testData.scoresList;
-    const finalScore = req.body.finalScore;
-    const rank =calculateRank(finalScore,scoresList);
-    res.json({ rank: rank });
-  });
-  
+app.post('/rank', (req, res) => {
+  const testData = JSON.parse(fs.readFileSync('TestData.json'));
+  const scoresList = testData.scoresList;
+  const finalScore = req.body.finalScore;
+  const rank = calculateRank(finalScore, scoresList);
+  res.json({ rank: rank });
+});
+
 const port = 8000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
-
-
-
-
-
-
-

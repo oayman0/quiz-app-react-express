@@ -1,4 +1,4 @@
-import { Box, Heading, Progress, IconButton } from "@chakra-ui/react";
+import { Box, Text, Progress, IconButton } from "@chakra-ui/react";
 import { CloseIcon } from "@chakra-ui/icons";
 const ProgressBar = ({ value ,handleExit}) => {
     return (
@@ -27,12 +27,12 @@ const ProgressBar = ({ value ,handleExit}) => {
                     borderRadius="10px"
                     bg='white'
                 />
-                <Heading
-                    as='h5'
-                    size='md'
+                <Text
+                    as='h4' 
+                    color='blackAlpha.700'
                 >
                     {value}%
-                </Heading>
+                </Text>
             </Box>
         </>
     )

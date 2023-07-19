@@ -1,18 +1,18 @@
 import { useState, useEffect, useRef } from "react";
-import { Box, Button, Text,} from "@chakra-ui/react";
-
+import { Box, Button, Text, } from "@chakra-ui/react";
+import API_BASE_URL from '../config/apiConfig';
 import Question from "./Question";
 import AnswerOption from "./AnswerOption";
 import Feedback from "./Feedback";
 import QuizScore from "./QuizScore";
-import LandingPage from "./LandingPage";
+import Landing from "./Landing";
 import Navbar from "./Navbar";
 import ProgressBar from "./ProgressBar";
 
 import correctSoundFile from "../audio/correct.mp3";
 import incorrectSoundFile from "../audio/incorrect.mp3";
 
-const Quiz = () => {
+const QuizPage = () => {
   const [questions, setQuestions] = useState([]);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -40,7 +40,7 @@ const Quiz = () => {
 
   const fetchQuestions = async () => {
     try {
-      const response = await fetch("http://localhost:8000/words");
+      const response = await fetch(API_BASE_URL+"/words");
       const data = await response.json();
       setQuestions(data);
     } catch (error) {
@@ -64,7 +64,7 @@ const Quiz = () => {
     if (isAnswerCorrect) {
       correctSoundRef.current.play();
       setScore((prevScore) => prevScore + 10);
-    }else{incorrectSoundRef.current.play();}
+    } else { incorrectSoundRef.current.play(); }
     setShowFeedback(true);
   };
 
@@ -76,7 +76,7 @@ const Quiz = () => {
 
   const calculateRank = async () => {
     try {
-      const response = await fetch("http://localhost:8000/rank", {
+      const response = await fetch(API_BASE_URL+"/rank", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -88,7 +88,7 @@ const Quiz = () => {
     } catch (error) {
       console.error("Error fetching rank from the backend:", error);
     }
-  };
+  }; 
 
   const getIndexOfAnswer = (question) => {
     const posOptions = ["noun", "verb", "adjective", "adverb"];
@@ -119,9 +119,7 @@ const Quiz = () => {
     <Box bg='#fef4e2' minHeight='100vh'>
       <Navbar />
       {isQuizComplete ? (
-        <>
           <QuizScore score={score} rank={rank} handleTryAgain={handleTryAgain} handleExit={handleExit} />
-        </>
       )
         : quizHasStarted ? (questions.length ? (
           <>
@@ -146,7 +144,7 @@ const Quiz = () => {
               {showFeedback ? (
                 <Box display="flex" justifyContent="center" mt={4}>
                   {questionIndex < questions.length ? (
-                    <Button onClick={handleNextQuestion} w='50vw' mb='30px'  borderRadius='50px' colorScheme="yellow">
+                    <Button onClick={handleNextQuestion} w='50vw' mb='30px' borderRadius='50px' colorScheme="yellow">
                       {questionIndex < questions.length - 1
                         ? "Next Question"
                         : "Quiz Complete!"}
@@ -157,7 +155,9 @@ const Quiz = () => {
                 <Box display="flex" justifyContent="center" mt={4}>
                   <Button onClick={handleSubmit} disabled={isSubmitDisabled} w='50vw'
                     colorScheme={isSubmitDisabled ? 'gray' : 'green'}
-                    mb='30px'  borderRadius='50px'
+                    mb='30px' borderRadius='50px'
+                    bg={isSubmitDisabled ? 'blackAlpha.200' : '#78b517'}
+                    _hover={isSubmitDisabled ? { bg: 'blackAlpha.400' } : { bg: '#66a30d' }}
                   >
                     Submit
                   </Button>
@@ -179,10 +179,10 @@ const Quiz = () => {
             <Text>Loading the questions...</Text>
           </Box>
         ))
-          : (<LandingPage setQuizHasStarted={setQuizHasStarted} />)
+          : (<Landing setQuizHasStarted={setQuizHasStarted} />)
       }
     </Box>
   );
 };
 
-export default Quiz;
+export default QuizPage;
