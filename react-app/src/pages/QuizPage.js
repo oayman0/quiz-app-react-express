@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 import { Box } from "@chakra-ui/react";
-import QuizScore from "../components/QuizScore";
-import Landing from "../components/Landing";
 import Navbar from "../components/Navbar";
+import Landing from "../components/Landing";
+import Quiz from "../components/Quiz";
+import QuizScore from "../components/QuizScore";
 import correctSoundFile from "../audio/correct.mp3";
 import incorrectSoundFile from "../audio/incorrect.mp3";
-import Quiz from "../components/Quiz";
 
-const QuizPage = ({ API_BASE_URL }) => {
+function QuizPage({ API_BASE_URL }) {
   // State variables
   const [questions, setQuestions] = useState([]);
   const [questionIndex, setQuestionIndex] = useState(0);
