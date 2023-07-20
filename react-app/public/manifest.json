@@ -5,7 +5,7 @@
     {
       "src": "favicon64.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
       "src": "favicon192.png",
@@ -29,8 +29,8 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": "",
-  "display": "standalone",
+  "start_url": "/",
+  "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "scope": "/",
