@@ -22,8 +22,10 @@ The Quiz App is a responsive and progressive (installable) web application built
 
 ![Frame 1](https://github.com/oayman0/quiz-app-react-express/assets/37955772/f7ff81a2-3210-4640-a9b0-a4548a94ed2b)
 
+![Frame 3 (1)](https://github.com/oayman0/quiz-app-react-express/assets/37955772/59f10d6c-a17b-40c6-b2fc-c26e0c333e36)
 
-![Frame 3](https://github.com/oayman0/quiz-app-react-express/assets/37955772/299080b5-7871-4a73-aaa7-94fe0f9e51ed)
+
+
 
 
 
